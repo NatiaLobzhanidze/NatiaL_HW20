@@ -26,10 +26,13 @@ extension ViewController {
         myButton.addTarget(self, action: #selector(calculateBtn), for: .touchUpInside)
     }
     
-    @objc func calculateBtn() {
+    @objc func calculateBtn(_ sender: UIButton) {
         let toNumb = 100_000
+        sender.isEnabled = false
+        sender.isUserInteractionEnabled = false
+        myButton.alpha = 0.5
+       
         DispatchQueue.global().async { [self] in
-            
             self.findPrimes(to: toNumb) {(numb) in
                 for i in 2...numb/2 {
                     if numb % i == 0 {
@@ -38,7 +41,15 @@ extension ViewController {
                 }
                 return true
             }
+            
+            DispatchQueue.main.async {
+                sender.isEnabled = true
+                sender.isUserInteractionEnabled = true
+                myButton.alpha = 1
+            }
+        
         }
+
     }
     func findPrimes(to number: Int, byClosure: (Int)-> Bool) {
         print(2)
@@ -46,8 +57,10 @@ extension ViewController {
         for num in stride(from: 5, through: number, by: 2) {
             if byClosure(num) {
                 print(num)
+            
             }
         }
+        
     }
   
 }

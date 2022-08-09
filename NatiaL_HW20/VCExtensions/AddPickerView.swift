@@ -10,11 +10,7 @@ import UIKit
 
 extension ViewController {
     
- 
-    
-    
     func addPickerViewConstraints() {
-        
         mypickerView.translatesAutoresizingMaskIntoConstraints = false
        
         NSLayoutConstraint.activate([
@@ -22,11 +18,9 @@ extension ViewController {
             mypickerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
             mypickerView.heightAnchor.constraint(equalToConstant: 200)
         ])
-        
     }
     
     func configurePickerView() {
-        
         mypickerView.backgroundColor = .white
         mypickerView.date = Date()
         mypickerView.locale = .current
