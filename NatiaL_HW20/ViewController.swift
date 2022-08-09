@@ -9,11 +9,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let mypickerView = UIDatePicker()
+    let myButton = UIButton()
+    
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .blue
+        view.addSubview(mypickerView)
+        view.addSubview(myButton)
+        setUpView()
+        
+        
     }
 
+    func setUpView() {
+
+        addPickerViewConstraints()
+        configurePickerView()
+        
+        addButtonConstraints()
+        configureButton()
+    }
 
 }
 

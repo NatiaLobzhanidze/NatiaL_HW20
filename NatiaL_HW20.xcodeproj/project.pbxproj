@@ -13,6 +13,8 @@
 		60CB847C28A243910035C421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CB847A28A243910035C421 /* Main.storyboard */; };
 		60CB847E28A243920035C421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CB847D28A243920035C421 /* Assets.xcassets */; };
 		60CB848128A243920035C421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60CB847F28A243920035C421 /* LaunchScreen.storyboard */; };
+		60CB848928A244A90035C421 /* AddPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB848828A244A90035C421 /* AddPickerView.swift */; };
+		60CB848C28A248670035C421 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB848B28A248670035C421 /* AddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		60CB847D28A243920035C421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60CB848028A243920035C421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60CB848228A243920035C421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60CB848828A244A90035C421 /* AddPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPickerView.swift; sourceTree = "<group>"; };
+		60CB848B28A248670035C421 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,22 @@
 				60CB847428A243910035C421 /* AppDelegate.swift */,
 				60CB847628A243910035C421 /* SceneDelegate.swift */,
 				60CB847828A243910035C421 /* ViewController.swift */,
+				60CB848A28A2483B0035C421 /* VCExtensions */,
 				60CB847A28A243910035C421 /* Main.storyboard */,
 				60CB847D28A243920035C421 /* Assets.xcassets */,
 				60CB847F28A243920035C421 /* LaunchScreen.storyboard */,
 				60CB848228A243920035C421 /* Info.plist */,
 			);
 			path = NatiaL_HW20;
+			sourceTree = "<group>";
+		};
+		60CB848A28A2483B0035C421 /* VCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				60CB848828A244A90035C421 /* AddPickerView.swift */,
+				60CB848B28A248670035C421 /* AddButton.swift */,
+			);
+			path = VCExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CB848928A244A90035C421 /* AddPickerView.swift in Sources */,
 				60CB847928A243910035C421 /* ViewController.swift in Sources */,
 				60CB847528A243910035C421 /* AppDelegate.swift in Sources */,
+				60CB848C28A248670035C421 /* AddButton.swift in Sources */,
 				60CB847728A243910035C421 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
